@@ -1,0 +1,85 @@
+<!doctype html>
+
+<!--
+Assignment Name: Portland Historical Tours
+File Name: reservation.html
+Date: 03/08/2016
+Programmer: Betsy Gascon
+-->
+
+<html>
+<head>
+    <title>Portland Historical Tours :: Reservations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A family-owned Historical Tours Company in Portland, Oregon. We offer tour packages that explore all parts our beautiful city.">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Shadows+Into+Light|Hind:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/png">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+    
+    
+    <body>
+        <div id="wrapper">
+        <header>
+            <a href="index.html"><h1>PORTLAND HISTORICAL TOURS</h1></a>
+        </header>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ourtours.html">Our Tours</a>
+            <a href="reservation.html">Book A Reservation</a>
+            <a href="index.html#contact">Contact Us</a>
+            <img src="images/Logo.png" alt="Portland Historical Tours Logo" width="200">
+        </nav>
+
+        <main>
+            <h2>Book a Reservation</h2>
+            <p>Please fill out the form below to make a reservation</p>
+            
+            <div id="reservation">
+            <form name="survey" method="post" enctype="text/plain">
+                    <label for="myTour">Choose Your Tour:</label>
+                    <select size="3" name="myTour" id="myTour" required>
+                    
+                        <option value="Downtown Tour">Downtown Tour</option>
+                        <option value="Growth Tour">Growth Tour</option>
+                        <option value="Landmarks Tour">Landmarks Tour</option>
+                    </select>
+                    <br>
+					<label for="myFName">First Name:</label> 
+                        <input type="text" name="myFName" id="myFName" required>
+					<label for="myLName">Last Name:</label> 
+                        <input type="text" name="myLName" id="myLName" required>
+					<label for="myEmail">E-mail:</label> 
+                        <input type="email" name="myEmail" id="myEmail" required>
+					<label for="myPhone">Phone Number:</label> 
+                        <input type="tel" name="myPhone" id="myPhone" required>
+					<label for="myDate">Tour Date:</label> 
+                        <input type="date" name="myDate" id="myDate" required>
+					<label for="myPeople">Total Participants:</label>
+                        <input type="number" min="1" max="14" name="myPeople" id="myPeople" required>
+					<label for="myComments">Does anyone in your party have food or drink sensitivities? If so, what are they?</label> 
+                        <textarea rows="4" cols="20" name="myComments" id="myComments"></textarea>
+					   
+                     <button type="submit">
+                        <img src="images/button.jpg" width="150" alt="Sign Up">
+                    </button>
+                
+				</form>
+            </div>
+        </main>
+
+
+        <footer>
+            <span id="copyright">Copyright &copy; 2016 Portland Historical Tours. All rights reserved</span>
+        </footer>
+        </div>    
+    </body>
+   
+</html>

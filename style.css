@@ -1,0 +1,235 @@
+/*
+Assignment Name: Portland Historical Tours
+File Name: style.css
+Date: 03/08/2016
+Programmer: Betsy Gascon
+*/
+
+/*  */
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    padding: 0 .2em .2em .2em;
+}
+
+body {
+    font-family: "Hind", sans-serif;
+    background-image: url(images/Portland%20Historical%20Tours.jpg);
+    background-attachment: fixed;
+}
+
+nav {
+    font-family: "Unica One", cursive;
+    background-color: gainsboro;
+    list-style-type: none;
+    border-top: solid 2px;
+    border-bottom: solid 1.5px;
+}
+
+nav img {
+    float: right;
+    padding-right: 3em;
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding: .75em;
+    border-bottom: 1.5px;
+}
+
+nav a:hover {
+    font-weight: normal;
+}
+
+nav a:visited {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Unica One", cursive;
+    font-size: 4em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    text-align: center;
+    border-top: solid 1.5px;
+}
+
+h3 {
+    font-family: "Hind", sans-serif;
+}
+
+header a, header a:hover, header a:visited {
+    text-decoration: none;
+    color: black;
+}
+a {
+    color: black;
+}
+
+main {
+    padding: 2em 2em .5em 2em;
+    margin-top: 2em;
+    background-color: gainsboro;
+    border-top: solid 2px;
+}
+
+main div {
+    padding: 2em 0 2em 0;
+    border-top: 1.5px solid black;
+}
+
+main img {
+    width: 100%;
+}
+
+table {
+    align-content: center;
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 100%;
+    padding-left: .5em;
+    padding-right: .5em;
+    border: 1px solid black;
+}
+tr:nth-of-type(even) {
+    background-color: darkgrey;
+}
+
+blockquote {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.2em;
+}
+
+footer {
+    padding-bottom: 1em;
+    margin-bottom: 0;
+    background-color: gainsboro;
+    border-bottom: solid 1.5px;
+}
+
+
+/* Contact Us and Reservation Forms */
+
+#reservation input {
+    width: 300px;
+    height: 50px;
+    font-size: 1.2em;
+
+}
+#reservation select {
+    width: 300px;
+}
+
+form label {
+	float: left;
+	display: block;
+	width: 14em;
+	padding-right: 5em;
+}
+label {
+	float: left;
+	display: block;
+	width: 2em;
+	padding-right: 8em;
+    font-family: "Hind", sans-serif;
+}
+select {
+    width: 13em;
+    margin-bottom: 1em;
+}
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+    width: 200px;
+    height: 30px;
+}
+mySubmit {
+	margin-left: 10em;
+}
+
+#skater img {
+    width: 100%;
+}
+
+#contact {
+    border: none;
+    padding-top: 0;
+}
+
+#copyright {
+    font-size: .8em;
+    text-align: center;
+    display: block;
+}
+
+@media only all and (min-width: 768px) {
+    
+    #wrapper {
+        width: 90%;
+        padding: 0 4em 0 4em;
+    }
+    
+    h1 {
+        padding: 2em 1em 1em 1em;
+    }
+    nav {
+        padding: 1.75em;
+    }
+    nav a {
+        display: inline;
+        padding-right: 2em;
+    }
+    
+    nav img {
+    float: right;
+    padding-right: 3em;
+    display: inline-block;
+    margin-top: -65px;    
+    }
+    
+    table {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    td {
+        width: 80%;
+    }
+    main img {
+        display: block;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 2em;
+    }
+    button {
+        border: none;
+        padding: 2em;
+    }
+}
+
+@media only all and (min-width: 1020px) {
+    
+    body {
+        background-size: cover;
+    }
+    #skater img {
+        float: right;
+        width: 380px;
+        margin-top: -350px;
+        margin-right: 50px;
+    }
+}
